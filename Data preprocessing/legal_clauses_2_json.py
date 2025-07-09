@@ -21,7 +21,7 @@ def extract_articles(text):
     """
     articles = []
     # 加 MULTILINE 模式：^ 表示行首，确保是段落的开头
-    pattern = re.compile(r'^第[一二三四五六七八九十百千万]+条', re.MULTILINE)
+    pattern = re.compile(r'^第[一二三四五六七八九十百千万零]+条', re.MULTILINE)
     matches = list(pattern.finditer(text))
 
     for i, match in enumerate(matches):
